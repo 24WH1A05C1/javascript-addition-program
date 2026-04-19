@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Addition Program</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            margin: 80px auto;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 8px;
+            width: 90%;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #result_id {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2> Addition Program</h2>
+
+    <input type="text" id="number1" placeholder="Enter number 1">
+    <input type="text" id="number2" placeholder="Enter number 2">
+
+    <button onclick="validation()">Add</button>
+
+    <div id="result_id">Result will be displayed here</div>
+</div>
+
+<script>
+    function validation() {
+        let number1 = parseInt(document.getElementById("number1").value);
+        let number2 = parseInt(document.getElementById("number2").value);
+
+        if (isNaN(number1) || isNaN(number2)) {
+            document.getElementById("result_id").innerHTML = "⚠️ Please enter numbers only";
+        } else {
+            addition();
+        }
+    }
+
+    function addition() {
+        let number1 = parseInt(document.getElementById("number1").value);
+        let number2 = parseInt(document.getElementById("number2").value);
+
+        let sum = number1 + number2;
+
+        document.getElementById("result_id").innerHTML = " The Sum is = " + sum;
+    }
+</script>
+
+</body>
+</html>
