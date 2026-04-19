@@ -44,9 +44,9 @@ JavaScript-Addition-Program/
 ├── addition.html
 ├── README.md
 └── images/
-    ├── addition_result.png
-    ├── invalid_input_num1.png
-    └── invalid_input_num2.png
+    ├── result.png
+    ├── invalid_input1.png
+    └── invalid_input2.png
 ```
 
 ---
@@ -87,15 +87,15 @@ function addition() {
 
 ### ✔ Addition Result
 
-![Addition Result](images/addition_result.png)
+![Addition Result](images/result.png)
 
 ### ❌ Invalid Input (First Number)
 
-![Invalid Input 1](images/invalid_input_num1.png)
+![Invalid Input 1](images/invalid_input1.png)
 
 ### ❌ Invalid Input (Second Number)
 
-![Invalid Input 2](images/invalid_input_num2.png)
+![Invalid Input 2](images/invalid_input2.png)
 
 ---
 
